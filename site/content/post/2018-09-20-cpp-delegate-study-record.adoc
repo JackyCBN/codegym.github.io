@@ -1,0 +1,68 @@
+= C++ Delegate学习记录
+:toc: []
+:cpp: C++
+:hp-tags: C++,
+
+// Refs
+:uri_function: https://en.cppreference.com/w/cpp/utility/functional/function
+:uri-What-you-need-not-know-about_2: http://templated-thoughts.blogspot.com/2016/09/what-you-need-not-know-about.html
+:uri-What-you-need-not-know-about_3: http://templated-thoughts.blogspot.com/2016/10/what-you-need-not-know-about.html
+:uri-Member-Function-Pointers-and-the-Fastest-Possible: https://www.codeproject.com/Articles/7150/Member-Function-Pointers-and-the-Fastest-Possible
+:uri-The-Impossibly-Fast-C-Delegates: https://www.codeproject.com/Articles/11015/The-Impossibly-Fast-C-Delegates
+:uri-Fast-C-Delegate: https://www.codeproject.com/Articles/13287/Fast-C-Delegate
+:uri-The-Impossibly-Fast-Cplusplus-Delegates-Fixed: https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed
+
+== 起因
+看同事代码，看到Delegate相关，有点好奇为何不直接用 {uri_function}[std::function] 而要自己封装一个，想来应该有原因的。虽然以前开发用{cpp},但近几年一直在开发手游，{cpp}11相关也不是很熟悉，就把自己学习做一个记录。
+
+== 为何要重复造轮子
+想来应该是 {uri_function}[std::function] 没有办法满足大家的需求，我大概总结一下，无非以下几点原因：
+
+- 是否要求动态分配内存
+- 是否可比较，方便写事件系统
+- 语法是否使用舒服
+- 是否支持lambda新的语法
+- 性能问题
+
+== 个人选择
+
+就本人来说，还是倾向于直接使用 {uri_function}[std::function]：
+
+- 是否要求动态分配内存: 
+* 就像 {uri-What-you-need-not-know-about_2}[What you need _not_ know about std::function] 里所说的，各个编译器的实现肯定会做SBO (Small Buffer Optimization), 所以一般是不会有动态分配的，只有超过这个buffer大小,才需要动态分配
+- 是否可比较，方便写事件系统: 
+* 不可比较,的确是function的*主要缺点*，但是可以类似于boost::signal,一样可以实现想要的功能，所以并不算一个大问题
+- 语法糖: 强大语法
+- 是否支持lambda新的语法: 支持
+- 性能问题: {uri-What-you-need-not-know-about_3}[std::function Performance benchmarks] 的测试表现并没有性能问题
+
+
+== 各种实现
+=== 前{cpp} 11时代
+- {uri-Member-Function-Pointers-and-the-Fastest-Possible}[FastDelegate]:
+* 虽然写法比较hack,但是非常好用，而且对底层的成员函数指针实现，也有比较透彻的解释。
+- {uri-The-Impossibly-Fast-C-Delegates}[The Impossibly Fast {cpp} Delegates]: 
+* 对 {uri-Member-Function-Pointers-and-the-Fastest-Possible}[FastDelegate]主要改进就是不需要动态内存分配，但语法层面就不怎么友好了，个人不是很喜欢
+- {uri-Fast-C-Delegate}[Fast C++ Delegate]: 
+* 对前述几个Delegate的做了一定改进
+
+=== {cpp}  11时代
+- {uri_function}[std::function] : {cpp}  11开始，由标准库提供的，强大的语法及功能
+- {uri-The-Impossibly-Fast-Cplusplus-Delegates-Fixed}[The Impossibly Fast C++ Delegates Fixed]: 
+* 用{cpp}  11对 {uri-The-Impossibly-Fast-C-Delegates}[The Impossibly Fast C Delegates]的重新实现
+
+===  实现的Code Review
+ - https://codereview.stackexchange.com/questions/36251/c-delegate-implementation-with-member-functions[C++ delegate implementation with member functions]: 
+ * 目前项目的代码就是基于这个实现来改进， code review的人不但点评的很精彩，提供的几个实现也非常好
+ - https://codereview.stackexchange.com/questions/14730/impossibly-fast-delegate-in-c11[Impossibly fast delegate in C++11]:
+ * {uri-The-Impossibly-Fast-C-Delegates}[The Impossibly Fast {cpp} Delegates]的{cpp} 11的实现
+ 
+ 
+ 
+== 性能比较
+ - https://github.com/yxbh/Cpp-Delegate-Library-Collection[C++ Delegate Library Collection]: 
+ * 对前面提到的好几个库做了性能比较
+ - {uri-What-you-need-not-know-about_3}[std::function Performance benchmarks]:
+ * 测试std::function的性能, 进一步论证了function的性能还是可以的
+ - http://www.mcshaffry.com/GameCode/index.php/Thread/1990-C-Delegate-Libraries-Performance-Benchmark[C++ Delegate Libraries Performance Benchmark]: 
+ * 虽然他这里的测试结果std::function性能不怎么样，但是我用他的测试代码在VS2017+Releae的情况下，测试结果几乎差不多
