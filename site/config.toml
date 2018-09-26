@@ -11,9 +11,10 @@ canonifyurls = true
 
 [params]
   description = "this is my description"
+  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   cover = "images/cover.jpg"
-  author = "Valère JEANTET"
-  authorlocation = "Paris, France"
+  author = "Jacky"
+  authorlocation = "ShangHai, China"
   authorwebsite = "http://vjeantet.fr"
   bio= "my bio"
   logo = "images/logo.png"

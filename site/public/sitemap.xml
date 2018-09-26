@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/post/dotscale-2014-as-a-sketch/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-09-20-cpp-delegate-study-record/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/first/</loc>
+    <lastmod>2016-12-22T20:04:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/second/</loc>
+    <lastmod>2016-09-09T10:24:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2016-09-09T10:15:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dotscale/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/event/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/lorem/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sketchnote/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-07-28T15:06:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

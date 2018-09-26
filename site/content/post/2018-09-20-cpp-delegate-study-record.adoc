@@ -1,5 +1,11 @@
+---
+title: "C++ Delegate学习记录"
+date: 2017-07-28T15:06:07-04:00
+draft: false
+---
+
 = C++ Delegate学习记录
-:toc: []
+:toc: true
 :cpp: C++
 :hp-tags: C++,
 
