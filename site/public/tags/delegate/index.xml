@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code Gym</title>
-    <link>/</link>
-    <description>Recent content on Code Gym</description>
+    <title>Delegate on Code Gym</title>
+    <link>/tags/delegate/</link>
+    <description>Recent content in Delegate on Code Gym</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/delegate/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

@@ -5,8 +5,7 @@ draft: false
 categories: ["Lorem"]
 # slug: "dotscale-2014-as-a-sketch"
 tags: ["C++","Delegate"]
-comments: true     # set false to hide Disqus comments
- share: true        # set false to share buttons
+share: true        # set false to share buttons
 # menu: "123"           # set "main" to add this content to the main menu
 ---
 # C++ Delegate学习记录
