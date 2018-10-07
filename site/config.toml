@@ -10,12 +10,12 @@ paginate = 10
 canonifyurls = true
 
 [params]
-  description = "this is my description"
+  description = "coding ..."
   metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   cover = "images/cover.jpg"
   author = "Jacky"
   authorlocation = "ShangHai, China"
-  authorwebsite = "codegym.github.io"
+  #authorwebsite = "codegym.github.io"
   bio= "Coding..."
   logo = "images/logo.png"
   #googleAnalyticsUserID = "UA-79101-12"
