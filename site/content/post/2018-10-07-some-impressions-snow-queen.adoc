@@ -1,7 +1,7 @@
 ---
 title: "无责任猜想之基督教推广"
 date: 2018-10-07
-draft: true
+draft: false
 categories: ["Lorem"]
 tags: ["猜想"]
 comments: true     # set false to hide Disqus comments
