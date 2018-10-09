@@ -1,22 +1,21 @@
 ---
 title: "无责任猜想之基督教推广"
 date: 2018-10-07
-draft: true
+draft: false
 categories: ["Lorem"]
 tags: ["猜想"]
 comments: true     # set false to hide Disqus comments
 share: true        # set false to share buttons
-menu: "无责任猜想之基督教推广"           # set "main" to add this content to the main menu
+menu: "123"           # set "main" to add this content to the main menu
 ---
-
 
 = 无责任猜想之基督教推广
 :toc: true
-:hp-tags: 猜想,
+:hp-tags: 猜想
 
-image::static/images/snow-queen-tickets.jpg[票根]
+image::images/snow-queen-tickets.jpg[票根]
 
-== 2儿童剧情
+== 儿童剧情
 国庆假期，开启溜娃模式，带儿子去看安徒生童话剧<<冰雪女王>>。
 
 故事讲的是一个冰雪女王，认为人性都是坏的，所以不断的产生的不能融化的雪，同时该雪只要进入人类的眼睛，就会使人变邪恶。
