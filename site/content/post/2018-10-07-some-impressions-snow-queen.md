@@ -1,6 +1,6 @@
 ---
-title: "C++ Delegate学习记录"
-date: 2018-09-27
+title: "无责任猜想之基督教推广"
+date: 2018-10-07
 draft: false
 categories: ["Lorem"]
 # slug: "dotscale-2014-as-a-sketch"
