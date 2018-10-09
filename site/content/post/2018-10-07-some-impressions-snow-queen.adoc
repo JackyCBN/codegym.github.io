@@ -8,13 +8,13 @@ comments: true     # set false to hide Disqus comments
 share: true        # set false to share buttons
 menu: "123"           # set "main" to add this content to the main menu
 ---
-:toc: true
-:hp-tags: 猜想,
-toc::[]
+
 
 = 无责任猜想之基督教推广
+:toc: true
+:hp-tags: 猜想,
 
-image::images/snow-queen-tickets.jpg[票根]
+image::static/images/snow-queen-tickets.jpg[票根]
 
 == 儿童剧情
 国庆假期，开启溜娃模式，带儿子去看安徒生童话剧<<冰雪女王>>。
